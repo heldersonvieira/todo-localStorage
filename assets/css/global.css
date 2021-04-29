@@ -1,0 +1,51 @@
+:root {
+    --font-white: #f8f9fa;
+    --dark-gray: #212529;
+    --gray: #6c757d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+input:hover, button:focus {
+    outline: none;
+}
+
+input:active {
+    outline: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    background: #f3f3f3;
+}
+
+.container {
+    background-color: white;
+
+    width: 40%;
+    max-width: 600px;
+    min-width: 340px;
+
+    margin: 0 auto;
+    padding: 1rem;
+
+    border-radius: 3px;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+    top: -20px;
+}
+
+.task.done {
+    text-decoration: line-through;
+    color: #e0e0e0;
+}

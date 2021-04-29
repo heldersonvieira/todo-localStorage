@@ -1,0 +1,47 @@
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--gray);
+    
+    height: 35px;
+
+    padding: 1.3rem 0.5rem;
+
+    border-bottom: 1px solid #f1f1f1;
+
+    transition: all .1s ease;
+}
+
+.task:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.task__content {
+    padding-right: 1rem;
+}
+
+.task__buttons {
+    width: 60px;
+    min-width: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.task__btn {
+    width: 20px;
+
+    background: inherit;
+
+    border-radius: 50%;
+    border: none;
+}
+
+.task__btn img {
+    width: 100%;
+
+    cursor: pointer;
+}
