@@ -8,12 +8,16 @@ export const App = {
         const buttonAdd = document.querySelector('[data-button-add]');
         buttonAdd.addEventListener('click', (event) => {
             event.preventDefault();
-            
+
+            if (getTask().description.trim() == '') {
+                return;
+            } 
+
             Task.all.push(getTask());
             Storage.set(Task.all);            
             
             App.reload(Task.all);
-            
+        
             document.querySelector('[data-description-task]').value = '';
         })
     
